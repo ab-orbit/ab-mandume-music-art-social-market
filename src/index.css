@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Bebas Neue", sans-serif;
+
+  --color-surface-tan: #F0EDE4;
+  --color-paper-white: #FFFFFF;
+  --color-mandume-primary: #7a5900;
+  --color-mandume-secondary: #b51a1e;
+  --color-mandume-tertiary: #2a6b2c;
+  --color-accent-gold: #DCA73A;
+  --color-on-surface: #1a1c1b;
+  --color-on-surface-variant: #4e4637;
+  --color-outline: #807665;
+  --color-outline-variant: #d2c5b2;
+  
+  /* Layout Spacing */
+  --spacing-margin: 32px;
+  --spacing-gutter: 24px;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-tan text-on-surface font-sans antialiased selection:bg-mandume-primary/20;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-wider uppercase;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

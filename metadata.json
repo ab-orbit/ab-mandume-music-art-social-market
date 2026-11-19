@@ -1,0 +1,13 @@
+{
+  "name": "Mandume Cultural Explorer",
+  "description": "A sophisticated digital archive and knowledge platform dedicated to the heritage and history of Mandume ya Ndemufayo.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "Interactive Knowledge Graphs",
+    "Digital Cartography",
+    "Analytical Archives",
+    "Community Expression Gallery"
+  ]
+}
